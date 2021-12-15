@@ -1,0 +1,120 @@
+.table {
+  width: 100%;
+  border: 1px solid #d0b09a;
+}
+
+.table-header {
+  display: flex;
+  width: 100%;
+  background: #3071e8;
+  padding: 18px 0;
+}
+
+.table-row {
+  display: flex;
+  width: 100%;
+  padding: 18px 0;
+}
+.table-row:nth-of-type(odd) {
+  background: #d0b09a;
+}
+
+.table-data,
+.header__item {
+  flex: 1 1 20%;
+  text-align: center;
+}
+
+.header__item {
+  text-transform: uppercase;
+}
+
+.filter__link {
+  color: white;
+  text-decoration: none;
+  position: relative;
+  display: inline-block;
+  padding-left: 24px;
+  padding-right: 24px;
+}
+.filter__link::after {
+  content: "";
+  position: absolute;
+  right: -18px;
+  color: white;
+  font-size: 12px;
+  top: 50%;
+  transform: translateY(-50%);
+}
+.filter__link.desc::after {
+  content: "(desc)";
+}
+.filter__link.asc::after {
+  content: "(asc)";
+}
+.edit {
+  color: #3071e8;
+  text-decoration: none;
+  padding: 10px;
+  margin-left: 10px;
+  font-weight: bold;
+  position: relative;
+}
+
+.edit::before {
+  content: "";
+  position: absolute;
+  top: 75%;
+  left: 8px;
+  height: 3px;
+  width: 0%;
+  background-color: #3071e8;
+}
+.edit:hover::before {
+  content: "";
+  position: absolute;
+  top: 75%;
+  left: 8px;
+  height: 3px;
+  width: 75%;
+  background-color: #3071e8;
+  animation: bar 0.5s cubic-bezier(0.72, -0.52, 0.17, 1.77) forwards;
+  -webkit-animation: bar 0.5s cubic-bezier(0.72, -0.52, 0.17, 1.77) forwards;
+}
+.delete {
+  color: #f85858;
+  text-decoration: none;
+  padding: 10px;
+  margin-left: 10px;
+  font-weight: bold;
+  position: relative;
+}
+
+.delete::before {
+  content: "";
+  position: absolute;
+  top: 75%;
+  left: 8px;
+  height: 3px;
+  width: 0%;
+  background-color: #f85858;
+}
+.delete:hover::before {
+  content: "";
+  position: absolute;
+  top: 75%;
+  left: 8px;
+  height: 3px;
+  width: 75%;
+
+  animation: bar 0.5s cubic-bezier(0.72, -0.52, 0.17, 1.77) forwards;
+  -webkit-animation: bar 0.5s cubic-bezier(0.72, -0.52, 0.17, 1.77) forwards;
+}
+@keyframes bar {
+  from {
+    width: 0%;
+  }
+  to {
+    width: 75%;
+  }
+}

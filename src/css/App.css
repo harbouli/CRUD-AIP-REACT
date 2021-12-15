@@ -1,0 +1,15 @@
+.alert{
+  background-color: rgb(255, 184, 91);
+  margin-bottom: 10px ;
+  width: 90%;
+  margin: auto;
+  border-radius: 50px;
+  padding: 1rem 0;
+  text-align: center;
+  margin-top:10px 100px;
+  -webkit-border-radius: 50px;
+  -moz-border-radius: 50px;
+  -ms-border-radius: 50px;
+  -o-border-radius: 50px;
+}
+
