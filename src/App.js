@@ -2,6 +2,7 @@ import { Fragment, useContext } from 'react';
 import './css/App.css';
 import Login from './pages/Login'
 import Register from './pages/Register'
+import Add from './pages/Add'
 import {
   BrowserRouter as Router,
   Switch,
@@ -23,6 +24,9 @@ function App() {
           </Route>
           <Route path="/Login" >
           {isAuth ? <Redirect to="/" /> : <Login />}
+          </Route>
+          <Route path="/add" >
+          {!isAuth ? <Redirect to="/" /> : <Add />}
           </Route>
           <Route path="/Singup" >
           {isAuth ? <Redirect to="/" /> : <Register />}

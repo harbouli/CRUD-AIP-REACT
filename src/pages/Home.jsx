@@ -15,6 +15,7 @@ export const Home = () => {
 
         <div className="holder">
           <div className="Tilt  ">
+            <Link  to="/add"> Add New User</Link>
             <Link onClick={logoutUser} to="/">
               {" "}
               Log Out
