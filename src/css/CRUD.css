@@ -59,6 +59,8 @@
   margin-left: 10px;
   font-weight: bold;
   position: relative;
+  background-color: #3070e800;
+  border: none;
 }
 
 .edit::before {

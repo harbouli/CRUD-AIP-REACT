@@ -1,13 +1,17 @@
 import axios from "axios";
 import React from "react";
 import "../css/CRUD.css";
-import { useState } from "react";
+import { useState,useEffect } from "react";
 
 const Read = () => {
   const [data, setData] = useState([]);
-  axios.get("http://localhost/CRUD_API/api/read.php").then(function (res) {
-    setData(res.data.message);
-  });
+  useEffect(() => {
+   
+    axios.get("http://localhost/CRUD_API/api/read.php").then(function (res) {
+      setData(res.data.message);
+    });
+    
+  }, [])
 
   return (
     <>
