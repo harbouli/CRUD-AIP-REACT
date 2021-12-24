@@ -2,6 +2,7 @@ import axios from "axios";
 import React from "react";
 import "../css/CRUD.css";
 import { useState,useEffect } from "react";
+import { Link } from "react-router-dom";
 
 const Read = () => {
   const [data, setData] = useState([]);
@@ -47,9 +48,9 @@ const Read = () => {
                   <div class="table-data">{userInfo.lastname}</div>
                   <div class="table-data">{userInfo.email}</div>
                   <div class="table-data">
-                    <a href="#" className="edit">
+                    <Link to={`/update/${userInfo.id}`} className="edit">
                       Edit
-                    </a>
+                    </Link>
                     <a
                       href={`http://localhost/CRUD_API/api/delete.php?id=${userInfo.id}`}
                       className="delete"

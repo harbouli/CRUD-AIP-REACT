@@ -3,6 +3,7 @@ import "./css/App.css";
 import Login from "./pages/Login";
 import Register from "./pages/Register";
 import Add from "./pages/Add";
+import Update from "./pages/Update";
 import {
   BrowserRouter as Router,
   Switch,
@@ -24,6 +25,9 @@ function App() {
             {isAuth ? <Redirect to="/" /> : <Login />}
           </Route>
           <Route path="/add">{!isAuth ? <Redirect to="/" /> : <Add />}</Route>
+          <Route path="/update/:id">
+            {!isAuth ? <Redirect to="/" /> : <Update />}
+          </Route>
           <Route path="/Singup">
             {isAuth ? <Redirect to="/" /> : <Register />}
           </Route>
