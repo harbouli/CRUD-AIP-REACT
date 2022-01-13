@@ -1,8 +1,8 @@
-*{
+* {
   /* box-sizing: border-box; */
 }
 @font-face {
-  font-family:  Gotham Pro;
+  font-family: Gotham Pro;
   src: url(asset/GothamPro.woff2);
   font-weight: normal;
 }
@@ -17,23 +17,22 @@
   font-weight: bolder;
 }
 @font-face {
-  font-family: Gotham Pro ;
+  font-family: Gotham Pro;
   src: url(asset/GothamPro-Light.woff2);
   font-weight: lighter;
 }
 @font-face {
-  font-family: Gotham Pro ;
+  font-family: Gotham Pro;
   src: url(asset/GothamPro-Medium.woff2);
   font-weight: 500;
 }
 body {
   margin: 0;
-  font-family: 'Gotham Pro', Arial, sans-serif;
-  background-color: #011931;
+  font-family: "Gotham Pro", Arial, sans-serif;
+  background-color: #b3def8;
   color: #fff;
   box-sizing: border-box;
 }
-h1{
+h1 {
   margin: 0;
 }
-
